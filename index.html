@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Quotes to live your life by</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -23,68 +23,79 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>
-                    <section>
-                        <h1>My Title</h1>
+		    <div class="slides">
+		    <section>
+                      <section>
+                        <h1>Quotes to live your life by</h1>
+			<h3>Wise words from Hopper, Roosevelt and Knuth</h3>
                         Ed Campbell (@esc24)
+                      </section>
                     </section>
-                    <section id="codeslide">
-                        Code:
+		<section>
+			<section>
+                	 "Easier to ask forgiveness than permission" - Grace Hopper
+                	 <div>
+                    	  <img src="Grace_Hopper_and_UNIVAC.jpg">
+                	 </div>
+			</section>
+                        <section id="eafpcode">
+                        EAFP:
                         <pre><code data-trim data-noescape>
-#!/usr/bin/env python3
-print('hello')
+try:
+    x = my_dict[key]
+except KeyError:
+    # handle missing key
                         </code></pre>
-                    </section>
-                </section>
-                <section>
-                    Here is a <a href="#/codeslide">Link to the code slide</a>
+                        LBYP:
+                        <pre><code data-trim data-noescape>
+if key in my_dict:
+    x = my_dict[key]
+else:
+    # handle missing key
+                        </code></pre>
+                        </section>
+			<section>
+			  <a href="https://mitpress.mit.edu/books/computing">
+			  <img src="Computing_Ceruzzi.jpg" width=400>
+                	 </a>
+			</section>	
                 </section>
 		<section>
-                Image can be loaded lazily using 'data-src' (oops on github, looks like you have to use 'src')
-                <div>
-                    <img src="image.png">
-                </div>    
+			<section>
+                	 "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty…" - Theodore Roosevelt Jr.
+                	 <div>
+                    	  <img src="teddyroosevelt.jpg" width=300>
+                	 </div>
+			</section>
+                        <section data-markdown>
+                        <script type="text/template">
+                        ## Markdown
+
+                        A paragraph with some text and a [link](http://hakim.se).
+                        </script>
+			</section>
                 </section>
-                <section data-markdown>
-                    <script type="text/template">
-                    ## Markdown
+		<section>
+			<section>
+                	"Premature optimisation is the root of all evil (or at least most of it) in programming" - Donald Knuth
+                	<div>
+                    	  <img src="KnuthAtOpenContentAlliance.jpg" height=300>
+                    	  <img src="ArtOfComputerProgramming.jpg" height=300>
+                	</div>
+			</section>
+                        <section>
+			Summer 2000 - California, LaTeX and redhat
+                	 <div>
+                    	  <img src="latexbook.jpg" height=400>
+                	 </div>
+                        <script type="text/template">
+                        ## Markdown
 
-                    A paragraph with some text and a [link](http://hakim.se).
-                    </script>
+                        A paragraph with some text and a [link](http://hakim.se).
+                        </script>
+			</section>
                 </section>
-                <section data-markdown>
-                    <script type="text/template">
-More markdown
-=============
-GET request to http://localhost:5000/v1/obs
-
-local install
--------------
-
-With conda:
-
-    conda install flask flask-cors
-    pip install pyjwt dotenv
-
-Just pip:
-
-    pip install -r requirements.txt
-
-
-docker
-------
-
-Build:
-
-    docker build -t username/restfulobs:latest .
-
-Run:
-
-    docker run -p 5000:5000 --env-file .env username/restfulobs
-                    </script>
-                </section>
-			</div>
+		</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
